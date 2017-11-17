@@ -204,7 +204,7 @@
                 if (val) {
                     if (! options.currencySplit) {
                         str += '<' + (options.rateElement || 'span') +
-                            (options.rateClass ? ' class="' + options.rateClass + '"' : '') + '>' +
+                            (options.rateClass ? ' class="' + options.rateClass + '  ' + convertTo[i].toUpperCase() + '"' : '') + '>' +
                             formatPrice(val) + ' ' +
                             (options.currencyElement ? '<' + options.currencyElement +
                                 (options.currencyClass ? ' class="' + options.currencyClass + '"' : '') +
